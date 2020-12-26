@@ -555,6 +555,12 @@ a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):hover {
 .alert-danger {
   background-color: #ff9966;
 }
+.mbr-section-btn a.btn:not(.btn-form) {
+  border-radius: 100px;
+}
+.mbr-gallery-filter li a {
+  border-radius: 100px !important;
+}
 .mbr-gallery-filter li.active .btn {
   background-color: #6592e6;
   border-color: #6592e6;
@@ -562,6 +568,9 @@ a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):hover {
 }
 .mbr-gallery-filter li.active .btn:focus {
   box-shadow: none;
+}
+.nav-tabs .nav-link {
+  border-radius: 100px !important;
 }
 a,
 a:hover {
@@ -618,6 +627,19 @@ blockquote {
   border-color: #6592e6;
 }
 /* Forms */
+.mbr-form .input-group-btn a.btn {
+  border-radius: 100px !important;
+}
+.mbr-form .input-group-btn a.btn:hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+}
+.mbr-form .input-group-btn button[type="submit"] {
+  border-radius: 100px !important;
+  padding: 1rem 3rem;
+}
+.mbr-form .input-group-btn button[type="submit"]:hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+}
 .jq-selectbox li:hover,
 .jq-selectbox li.selected {
   background-color: #6592e6;
@@ -688,8 +710,14 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-skbBfPDHsV .navbar-dropdown {
-  position: relative !important;
+.cid-skbBfPDHsV {
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+  min-height: 60px;
+}
+.cid-skbBfPDHsV nav.navbar {
+  position: fixed;
 }
 .cid-skbBfPDHsV .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -1005,6 +1033,7 @@ a {
 }
 .cid-skbBfPDHsV .navbar-dropdown {
   padding: 0 1rem;
+  position: fixed;
 }
 .cid-skbBfPDHsV a.nav-link {
   display: flex;
@@ -1166,7 +1195,7 @@ a {
   padding-bottom: 2rem;
 }
 .cid-skieKMkwIO .item-wrapper {
-  height: 300px;
+  height: 200px;
   position: relative;
 }
 .cid-skieKMkwIO .item-wrapper img {
@@ -2494,8 +2523,14 @@ a {
   list-style-type: none;
   padding: 0;
 }
-.cid-skbBfPDHsV .navbar-dropdown {
-  position: relative !important;
+.cid-skbBfPDHsV {
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+  min-height: 60px;
+}
+.cid-skbBfPDHsV nav.navbar {
+  position: fixed;
 }
 .cid-skbBfPDHsV .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -2811,6 +2846,7 @@ a {
 }
 .cid-skbBfPDHsV .navbar-dropdown {
   padding: 0 1rem;
+  position: fixed;
 }
 .cid-skbBfPDHsV a.nav-link {
   display: flex;
